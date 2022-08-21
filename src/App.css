@@ -1,0 +1,19 @@
+.motion{
+  opacity: 1;
+    filter:none;
+    transition: all 0.5s ease-in-out;
+}
+
+.darkmode{
+  color: rgb(192, 198, 198) !important;
+}
+.lightmode{
+  color: brown !important;
+}
+
+.light-shade-sm{
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important
+}
+.dark-shade-sm{
+  box-shadow: 0 .125rem .25rem rgba(255, 255, 255, 0.075)!important
+}

@@ -1,15 +1,17 @@
 import './App.css';
 import Header from './Components/header';
-import AnimatedRoutes from './Components/AnimatedRoutes';
+import AnimatedRoutes from './Components/Routes/AnimatedRoutes';
+import { useContext } from 'react';
+import { ThemeContext } from './Components/Themes/theme';
 
 function App() {
+  const [{setTheme, isDark}, toggleTheme] = useContext(ThemeContext)
+  let Mode= isDark? "DarkMode" : "LightMode"
+  console.log("Current Theme is:", Mode)
   return (
-    <div className="App">
-      <h3 className='text-danger'>Getting started</h3>
-      <Header/>
-      <AnimatedRoutes>
-
-      </AnimatedRoutes>
+    <div className={setTheme.className}>
+      <Header setTheme= {setTheme} isDark= {isDark} toggleTheme ={toggleTheme}/>
+      <AnimatedRoutes/>
     </div>
   );
 }
