@@ -1,5 +1,5 @@
-import { Navbar, NavbarBrand, Nav, NavItem,Button,Row,Col } from "react-bootstrap";
-import { Lightbulb, LightbulbFill, List} from "react-bootstrap-icons";
+import { Navbar, NavbarBrand, Nav, NavItem,Button,Row,Col,Image } from "react-bootstrap";
+import { FilterCircle, FilterLeft, FilterSquare, Lightbulb, LightbulbFill, ListUl} from "react-bootstrap-icons";
 import {NavLink, Link} from "react-router-dom";
 
 import { useState } from "react";
@@ -12,22 +12,21 @@ export default function Header(props){
         setShowOff(prevState => !prevState)
     }
     return(
-        <div>
-            <Navbar  className={props.setTheme.navshade}>
-                <Button variant="dark" onClick={handleOffcanvasNav} className='d-md-none'>
-                        <List size={30}/>
+            <Navbar bg={props.isDark? 'dark':'light'} className={props.setTheme.navshade} >
+                <Button variant={props.isDark? 'danger': 'warning'} onClick={handleOffcanvasNav} className='d-md-none shadow-none'>
+                        <FilterLeft size={30}/>
                     </Button>
-                <NavbarBrand className="ps-5">
-                    <NavLink to='/' className={props.setTheme.Navlink}>
-                        akbar
-                    </NavLink>
+                <NavbarBrand className="ms-5 ps-5" >
+                    <Link to="/">
+                        <Image src="/images/akbarbadmus-logo2.png" style={{width: 80}} />
+                        </Link>
                 </NavbarBrand>
-                <Nav className=" mx-auto d-none d-md-block col-8">
+                <Nav className=" mx-auto d-none d-md-block col-7">
                     <Row >
                         <Col className="col-auto mx-auto">
                             <NavItem>
                                 <NavLink to='/home'
-                                className={props.setTheme.Navlink}> Home</NavLink>
+                                className={props.setTheme.Navlink} > Home</NavLink>
                                 
                             </NavItem>
                         </Col>
@@ -48,17 +47,15 @@ export default function Header(props){
                         </Col>
                     </Row>
                 </Nav>
-                <Nav className="ms-auto pe-5">
-                    <NavItem>
-                        <NavLink to='#'
-                        className={props.setTheme.Navlink}
-                        onClick={props.toggleTheme}>
-                        
+                <Nav className="ms-auto  me-2">
+                    <NavItem
+                    onClick={props.toggleTheme}
+                    className="theme mt-1 me-5">
                             <Row>
-                                <Col className="col-auto">
-                                <h6>Theme :</h6>
+                                <Col className="col-7 mx-auto ">
+                                <h6 className="theme">Theme:</h6>
                                 </Col>
-                                <Col className="col-auto">
+                                <Col className="">
                                     <LightbulbFill
                                         color={props.isDark? "red" : "blue" }
                                         
@@ -66,17 +63,17 @@ export default function Header(props){
                                         size={15}/>
                                     </Col>
                             </Row>
-                        </NavLink>
+                        
                     </NavItem>
                     
-                   
+                    <SsHeader show={showOff} onHide={handleOffcanvasNav} setTheme={props.setTheme} isDark={props.isDark} toggleTheme={props.toggleTheme}/>
+
                 </Nav>
 
                 
                 
             </Navbar>
 
-            <SsHeader show={showOff} onHide={handleOffcanvasNav} />
-        </div>
+        
     )
 }

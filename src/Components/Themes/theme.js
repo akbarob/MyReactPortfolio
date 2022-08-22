@@ -3,13 +3,22 @@ import { createContext, useEffect, useState } from "react"
 export const themes={
     darkMode: {
         className: "bg-dark motion btn-outline-warning darkmode",
-        Navlink: "darkmode nav-link",
-        navshade:'dark-shade-sm'
+        Navlink: "darkmode nav-link linker",
+        navshade:'dark-shade-sm sticky-top darkmode',
+        footer:'footer darkmode text-center  motion ',
+        color: 'darkmode',
+        header:'darkmodenav',
+        a:'a darkmode'
     },
     lightMode:{
         className:"bg-light  motion btn-outline-danger lightmode",
-        Navlink: "lightmode nav-link",
-        navshade:'light-shade-sm'
+        Navlink: "lightmode nav-link linker",
+        navshade:'light-shade-sm sticky-top lightmode',
+        footer:'footer lightmode   text-center motion  ',
+        color: 'lightmode',
+        header:'ligtmodenav',
+        a:'a lightmode'
+
 
     }
 }

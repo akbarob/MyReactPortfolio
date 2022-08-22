@@ -2,15 +2,17 @@ import { AnimatePresence } from 'framer-motion'
 import { Navigate, Route, Routes,useParams, useLocation} from 'react-router-dom'
 import AboutMe from './AboutMe'
 import Home from './Home'
-export default function AnimatedRoutes(){
+import Projects from './Projects';
+export default function AnimatedRoutes(props){
     const location = useLocation();
 
     return(
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/home' element={<Home/>}/>
+                <Route path='/home' element={<Home setTheme= {props.setTheme} />}/>
                 <Route path='/about' element={<AboutMe/>}/>
+                <Route path='/projects' element={<Projects/>}/>
                 <Route path='*' element={<Navigate to='/'/>}/>
 
             </Routes>

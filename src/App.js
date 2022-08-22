@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Components/header';
+import Footer from './Components/footer';
 import AnimatedRoutes from './Components/Routes/AnimatedRoutes';
 import { useContext } from 'react';
 import { ThemeContext } from './Components/Themes/theme';
@@ -11,7 +12,8 @@ function App() {
   return (
     <div className={setTheme.className}>
       <Header setTheme= {setTheme} isDark= {isDark} toggleTheme ={toggleTheme}/>
-      <AnimatedRoutes/>
+      <AnimatedRoutes setTheme= {setTheme} />
+      <Footer setTheme= {setTheme} isDark= {isDark}/>
     </div>
   );
 }
