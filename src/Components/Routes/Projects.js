@@ -1,4 +1,4 @@
-import {Card} from 'react-bootstrap'
+import {Card,Badge} from 'react-bootstrap'
 import { Info } from '../Info'
 export default function Projects(){
     console.log(Info)
@@ -8,6 +8,7 @@ export default function Projects(){
                 <Card.Img src={item.image}/>
                 <Card.Body>
                     <Card.Title> {item.name}</Card.Title>
+                    <Badge>React</Badge> <Badge>Bootstrap</Badge> <Badge>Css</Badge>
                 </Card.Body>
 
             </Card>

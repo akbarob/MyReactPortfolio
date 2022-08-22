@@ -17,7 +17,7 @@ export default function Header(props){
                         <FilterLeft size={30}/>
                     </Button>
                 <NavbarBrand className="ms-5 ps-5" >
-                    <Link to="/">
+                    <Link to="/home">
                         <Image src="/images/akbarbadmus-logo2.png" style={{width: 80}} />
                         </Link>
                 </NavbarBrand>
