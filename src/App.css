@@ -98,3 +98,7 @@
 .a{
   text-decoration: underline  #ffe7b7 ;
 }
+.cardbody{
+  background-image: linear-gradient(180deg, #ffe7b7 0%, #ffa9a97f 100%);
+  color: brown !important;
+}

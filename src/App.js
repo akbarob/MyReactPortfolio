@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Components/header';
 import Footer from './Components/footer';
-import AnimatedRoutes from './Components/Routes/AnimatedRoutes';
+import AnimatedRoutes from './Components/Pages/AnimatedRoutes';
 import { useContext } from 'react';
 import { ThemeContext } from './Components/Themes/theme';
 

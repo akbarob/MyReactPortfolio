@@ -15,6 +15,7 @@ I still don't know if it's "front-end", "frontend, or "front end", and at this p
                     <li>CSS</li>
                     <li>Javascript</li>
                     <li>React</li>
+                    <li>Redux</li>
                     <li>Bootstrap</li>
                     <li>Node</li>
                     <li>Github</li>
