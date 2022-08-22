@@ -7,7 +7,8 @@ export default function Projects(props){
         console.log(item.skills)
         return(
             <div key={item.id} className='col-12 col-md-5 col-lg-3 mx-auto text-center mb-5'>
-                <Link to={item.website} className={props.setTheme.a} >
+                <a href={item.website} target={"_blank"} rel="noopener noreferrer"  className={props.setTheme.a} >
+
                     <Card  className={props.setTheme.Navlink}>
                         <Card.Img src={item.image}/>
                         <Card.Body className='cardbody'>
@@ -19,7 +20,7 @@ export default function Projects(props){
                         </Card.Body>
 
                     </Card>
-                </Link>
+                </a>
             </div>
             
         )
