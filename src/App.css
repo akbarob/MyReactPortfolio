@@ -33,6 +33,14 @@
   transition: all 0.4s ease-in-out;
 
 }
+.card{
+  border: 0px!important;
+}
+.card:hover, .card:focus{
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+
+}
 
 .off-navi{
   transition: all 0.5s ease-in-out;
@@ -45,7 +53,7 @@
   
 }
 .user-bg{
-  box-shadow: 5px 5px 50px grey;
+  box-shadow: 5px 5px 30px grey;
   border-radius: 50%;
   width: 300px;
   height: 300px;

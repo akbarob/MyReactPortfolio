@@ -4,6 +4,7 @@ export const themes={
     darkMode: {
         className: "bg-dark motion btn-outline-warning darkmode",
         Navlink: "darkmode nav-link linker",
+        card:"darkmode nav-link card ",
         navshade:'dark-shade-sm sticky-top darkmode',
         footer:'footer darkmode text-center  motion ',
         color: 'darkmode',
@@ -13,8 +14,9 @@ export const themes={
     lightMode:{
         className:"bg-light  motion btn-outline-danger lightmode",
         Navlink: "lightmode nav-link linker",
+        card:"lightmode nav-link card ",
         navshade:'light-shade-sm sticky-top lightmode',
-        footer:'footer lightmode   text-center motion  ',
+        footer:'footer lightmode   text-center motion',
         color: 'lightmode',
         header:'ligtmodenav',
         a:'a lightmode'

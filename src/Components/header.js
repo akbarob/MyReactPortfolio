@@ -16,7 +16,7 @@ export default function Header(props){
                 <Button variant={props.isDark? 'danger': 'warning'} onClick={handleOffcanvasNav} className='d-md-none shadow-none'>
                         <FilterLeft size={30}/>
                     </Button>
-                <NavbarBrand className="ms-5 ps-5" >
+                <NavbarBrand className="ms-5 ps-5 mt-2" >
                     <Link to="/home">
                         <Image src="/images/logo-svg.svg" style={{width: 70}} />
                         </Link>
@@ -50,14 +50,14 @@ export default function Header(props){
                 <Nav className="ms-auto  me-2">
                     <NavItem
                     onClick={props.toggleTheme}
-                    className="theme mt-1 me-5">
+                    className="theme mt-2 me-5">
                             <Row>
                                 <Col className="col-7 mx-auto ">
                                 <h6 className="theme">Theme:</h6>
                                 </Col>
                                 <Col className="">
                                     <LightbulbFill
-                                        color={props.isDark? "red" : "blue" }
+                                        color={props.isDark? "brown" : "yellow" }
                                         
                                         className='pb-1'
                                         size={15}/>

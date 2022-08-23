@@ -1,6 +1,11 @@
+import {motion} from 'framer-motion' 
 export default function AboutMe(){
     return(
-        <div className="container my-5 " style={{minHeight: "80vh"}}>
+        <motion.div
+            initial={{opacity:0, width:0}}
+            animate={{opacity:1, width:"100%"}}
+            exit={{opacity:0, x:window.innerWidth, transition:{duration:0.5}}}
+            className="container my-5 " style={{minHeight: "80vh"}}>
             <div className="col-10 col-md-8 mx-auto about-bg"> 
                 <h5 className="text-center">Akbar Badmus</h5>
                 <p>Hello stalker! I'm Akbar, a front-end developer from Nigeria. I love building web applications with React, and I'm currently studying server side. I am on a journey to make the world a better place while constantly learning daily .
@@ -37,6 +42,6 @@ I still don't know if it's "front-end", "frontend, or "front end", and at this p
 
 
 
-        </div>
+        </motion.div>
     )
 }

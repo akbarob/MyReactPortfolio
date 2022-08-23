@@ -8,7 +8,8 @@ export const Info =[
             react:'React',
             redux:'Redux',
             bs:'Bootstrap',
-            rest:'REST Api'
+            rest:'REST Api',
+            css:'CSS'
         }
     },
     {
@@ -20,7 +21,8 @@ export const Info =[
             react:'React',
             redux:'Redux',
             bs:'Bootstrap',
-            rest:'REST Api'
+            rest:'REST Api',
+            css:'CSS'
         }
 
     },
@@ -32,8 +34,18 @@ export const Info =[
         skills:{
             react:'React',
             bs:'Bootstrap',
+            css:'CSS'
         
         }
 
-    }
+    },
+]
+export const ProfileLinks=[
+       {
+            id:0,
+            github:'git',
+            linkedin:'link',
+            behance:'behance',
+        }
+    
 ]
