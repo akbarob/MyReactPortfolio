@@ -4,8 +4,12 @@ import {NavLink, Link} from "react-router-dom";
 
 import { useState } from "react";
 import SsHeader from "./smallScreenheader";
-
+import {motion} from 'framer-motion'
 export default function Header(props){
+    const variants = {
+        open: {opacity:1 , x:0},
+        closed:{opacity: 0, x:'+100%'}
+    }
 
     const [showOff, setShowOff] = useState(false)
     function handleOffcanvasNav(){
@@ -13,9 +17,15 @@ export default function Header(props){
     }
     return(
             <Navbar bg={props.isDark? 'dark':'light'} className={props.setTheme.navshade} >
-                <Button variant={props.isDark? 'danger': 'warning'} onClick={handleOffcanvasNav} className='d-md-none shadow-none'>
-                        <FilterLeft size={30}/>
-                    </Button>
+                
+                <motion.div
+                animate={showOff? "open": "closed"}
+                variants= {variants}
+                >
+                    <Button variant ={props.isDark? 'danger': 'warning'} onClick={handleOffcanvasNav} className='d-md-none shadow-none'>
+                            <FilterLeft size={30}/>
+                        </Button>
+                    </motion.div>
                 <NavbarBrand className="ms-5 ps-5 mt-2" >
                     <Link to="/home">
                         <Image src="/images/logo-svg.svg" style={{width: 70}} />

@@ -22,7 +22,8 @@ export const Info =[
             redux:'Redux',
             bs:'Bootstrap',
             rest:'REST Api',
-            css:'CSS'
+            css:'CSS',
+            firebase:"Firebase"
         }
 
     },

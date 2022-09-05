@@ -34,7 +34,8 @@ export default function Projects(props){
                             <Badge pill bg='danger' className='mx-1'>{item.skills.react}</Badge> 
                             <Badge pill bg='danger' className='mx-1'>{item.skills.redux}</Badge> 
                             <Badge pill bg='danger' className='mx-1'>{item.skills.bs}</Badge>
-                            <Badge pill bg='danger' className='mx-1'>{item.skills.rest}</Badge> 
+                            <Badge pill bg='danger' className='mx-1'>{item.skills.rest}</Badge>
+                            <Badge pill bg='danger' className='mx-1'>{item.skills.firebase}</Badge>  
                             <Badge pill bg='danger' className='mx-1'>{item.skills.css}</Badge>  
  
                         </Card.Body>
