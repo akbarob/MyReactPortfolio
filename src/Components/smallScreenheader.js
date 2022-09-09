@@ -51,7 +51,7 @@ export default function SsHeader(props){
                                 </Col>
                                 <Col className="c">
                                     <LightbulbFill
-                                        color={props.isDark? "red" : "blue" }
+                                        color={props.isDark? "brown" : "yellow" }
                                         
                                         className='pb-1'
                                         size={15}/>

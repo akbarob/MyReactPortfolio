@@ -35,9 +35,9 @@ export default function Home(props){
 
                 </ul>
                 <div className="col-12 text-center">
-                    <Button variant="outline-dark" className="border-0 shadow-none" href='https://github.com/akbarob' target='_blank'><Github size={30}/></Button>
+                    <Button variant={props.isDark? 'outline-light' : 'outline-dark' } className="border-0 shadow-none" href='https://github.com/akbarob' target='_blank'><Github size={30}/></Button>
                     <Button  variant="outline-primary" className="border-0 shadow-none" href='https://www.linkedin.com/in/akbar-badmus-10790a179/' target='_blank' ><Linkedin size={30}/></Button>
-                    <Button  variant="outline-primary" className="border-0 shadow-none" href='https://www.behance.net/akbarbadmus' target='_blank'><Behance size={30}/></Button>
+                    <Button  variant="outline-warning" className="border-0 shadow-none" href='https://www.behance.net/akbarbadmus' target='_blank'><Behance size={30}/></Button>
                 </div>
 
                 

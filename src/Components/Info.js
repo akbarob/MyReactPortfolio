@@ -1,19 +1,6 @@
 export const Info =[
     {
         id:0,
-        name:'wears app',
-        image: "images/wears 2.png",
-        website:"https://wears-app.vercel.app/",
-        skills:{
-            react:'React',
-            redux:'Redux',
-            bs:'Bootstrap',
-            rest:'REST Api',
-            css:'CSS'
-        }
-    },
-    {
-        id:1,
         name:'confusion app',
         image: "images/confus app.png",
         website:"https://confusion-gules.vercel.app/",
@@ -24,8 +11,23 @@ export const Info =[
             rest:'REST Api',
             css:'CSS',
             firebase:"Firebase"
-        }
+        },
+        source: "https://github.com/akbarob/confusion"
 
+    },
+    {
+        id:1,
+        name:'wears app',
+        image: "images/wears 2.png",
+        website:"https://wears-app.vercel.app/",
+        skills:{
+            react:'React',
+            redux:'Redux',
+            bs:'Bootstrap',
+            rest:'REST Api',
+            css:'CSS'
+        },
+        source: "https://github.com/akbarob/wears-app"
     },
     {
         id:2,
@@ -37,7 +39,8 @@ export const Info =[
             bs:'Bootstrap',
             css:'CSS'
         
-        }
+        },
+        source: "https://github.com/akbarob/MyReactPortfolio"
 
     },
 ]

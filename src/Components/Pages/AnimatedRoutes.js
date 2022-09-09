@@ -9,8 +9,8 @@ export default function AnimatedRoutes(props){
     return(
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path='/' element={<Home setTheme= {props.setTheme} />}/>
-                <Route path='/home' element={<Home setTheme= {props.setTheme} />}/>
+                <Route path='/' element={<Home setTheme= {props.setTheme}  isDark= {props.isDark}/>}/>
+                <Route path='/home' element={<Home setTheme= {props.setTheme} isDark= {props.isDark}/>}/>
                 <Route path='/about' element={<AboutMe/>}/>
                 <Route path='/projects' element={<Projects setTheme= {props.setTheme}/>}/>
                 <Route path='*' element={<Navigate to='/'/>}/>

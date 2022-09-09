@@ -23,7 +23,7 @@ export default function Projects(props){
         return(
             <motion.div 
                
-                key={item.id} className='col-12 col-md-5 col-lg-3 mx-auto text-center mb-5'>
+                key={item.id} className='col-12 col-md-5 col-lg-3 mx-auto text-center my-5'>
                 <a href={item.website} target={"_blank"} rel="noopener noreferrer"  className={props.setTheme.a} 
                 initial="hidden" animate="show"  variants={container}>
 
@@ -42,6 +42,12 @@ export default function Projects(props){
 
                     </motion.Card>
                 </a>
+
+                <div className='my-2'>
+                    <a href={item.source} target={"_blank"} rel="noopener noreferrer" className={props.setTheme.color} >
+                        <h3>Source Code</h3>
+                    </a>                
+                </div>
             </motion.div>
             
         )

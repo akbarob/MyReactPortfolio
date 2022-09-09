@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={setTheme.className}>
       <Header setTheme= {setTheme} isDark= {isDark} toggleTheme ={toggleTheme}/>
-      <AnimatedRoutes setTheme= {setTheme} />
+      <AnimatedRoutes setTheme= {setTheme} isDark= {isDark} />
       <Footer setTheme= {setTheme} isDark= {isDark}/>
     </div>
   );
