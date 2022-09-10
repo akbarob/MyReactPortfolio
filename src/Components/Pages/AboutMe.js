@@ -1,3 +1,4 @@
+import { Row,Col } from 'react-bootstrap'
 import {motion} from 'framer-motion' 
 export default function AboutMe(){
     return(
@@ -8,23 +9,38 @@ export default function AboutMe(){
             className="container my-5 " style={{minHeight: "80vh"}}>
             <div className="col-10 col-md-8 mx-auto about-bg"> 
                 <h5 className="text-center">Akbar Badmus</h5>
-                <p>Hello stalker! I'm Akbar, a front-end developer from Nigeria. I love building web applications with React, and I'm currently studying server side. I am on a journey to make the world a better place while constantly learning daily .
+                <p>Hello! I'm Akbar, a front-end developer from Nigeria. I love building web applications with React, and I'm currently studying server side. I am on a journey to make the world a better place while constantly learning daily .
 
 I still don't know if it's "front-end", "frontend, or "front end", and at this point I'm too afraid to ask.</p>
             </div>
 
             <div className="col-10 col-md-8 mx-auto about-bg">
-                <h5 className="text-center">Skills</h5>
-                <ul className="list-unstyled offset-1">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>Bootstrap</li>
-                    <li>Node</li>
-                    <li>Github</li>
-                </ul>
+                <Row>
+                    <Col>
+                    <h5 className="text-center">Skills</h5>
+                    <ul className="list-unstyled offset-2 ">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Bootstrap</li>
+                        <li>Node</li>
+                        <li>Github</li>
+                        <li>Firebase</li>
+                    </ul>
+                    </Col>  
+                    <Col>
+                    <h5 className="text-center">Familiar with</h5>
+                    <ul className="list-unstyled offset-5">
+                        <li>Mongodb</li>
+                        <li>Express</li>
+                       
+                    </ul>
+                    </Col>  
+                </Row>
+
+                
 
             </div>
             <div className="col-10 col-md-8 mx-auto about-bg">

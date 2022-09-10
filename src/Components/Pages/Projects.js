@@ -1,4 +1,4 @@
-import {Card,Badge} from 'react-bootstrap'
+import {Card,Badge, Button} from 'react-bootstrap'
 import { Info } from '../Info'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
@@ -43,10 +43,10 @@ export default function Projects(props){
                     </motion.Card>
                 </a>
 
-                <div className='my-2'>
-                    <a href={item.source} target={"_blank"} rel="noopener noreferrer" className={props.setTheme.color} >
-                        <h3>Source Code</h3>
-                    </a>                
+                <div className='my-2 mydiv'>
+                        <a href={item.source} target={"_blank"} rel="noopener noreferrer" className={props.setTheme.projectLink} >
+                            <h3>&lt;Source Code/&gt;</h3>
+                        </a> 
                 </div>
             </motion.div>
             

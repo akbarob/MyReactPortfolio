@@ -9,7 +9,8 @@ export const themes={
         footer:'footer darkmode text-center  motion ',
         color: 'darkmode',
         header:'darkmodenav',
-        a:'a darkmode'
+        a:'a darkmode',
+        projectLink:'darkmode projectLink'
     },
     lightMode:{
         className:"bg-light  motion btn-outline-danger lightmode",
@@ -19,7 +20,8 @@ export const themes={
         footer:'footer lightmode   text-center motion',
         color: 'lightmode',
         header:'ligtmodenav',
-        a:'a lightmode'
+        a:'a lightmode',
+        projectLink:'lightmode projectLink'
 
 
     }
