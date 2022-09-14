@@ -33,7 +33,7 @@ export const Info =[
         id:2,
         name:'portfolio app',
         image: "images/port 2.png",
-        website:"https://my-react-portfolio-silk.vercel.app/",
+        website:"https://akbarbadmus.vercel.app/",
         skills:{
             react:'React',
             bs:'Bootstrap',

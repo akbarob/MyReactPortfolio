@@ -17,7 +17,7 @@ export const themes={
         Navlink: "lightmode nav-link linker",
         card:"lightmode nav-link card ",
         navshade:'light-shade-sm sticky-top lightmode',
-        footer:'footer lightmode   text-center motion',
+        footer:'footer lightmode   text-center motion  ',
         color: 'lightmode',
         header:'ligtmodenav',
         a:'a lightmode',

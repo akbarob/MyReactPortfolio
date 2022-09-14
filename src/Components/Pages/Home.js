@@ -13,7 +13,7 @@ export default function Home(props){
             animate={{opacity:1, width:"100%"}}
             exit={{opacity:0, x:window.innerWidth, transition:{duration:0.5}}}
             style={{minHeight: "90vh"}} className="container d-flex justify-content-center align-items-center">
-            <Row className='text-center '> 
+            <Row className='text-center my-5'> 
                 <Col className='col-12 col-md-5 mx-auto mb-5'>
                     <div className='user-bg  d-flex justify-content-center mx-auto my-auto'>
                         <Image className='pic user img-fluid align-self-center' src='images/me.png'/>

@@ -17,17 +17,25 @@ export default function Projects(props){
         hidden: { opacity: 0 },
         show: { opacity: 1 }
       }
+
+      const boxVariant = {
+        visible: { opacity: 1, scale: 1.1, x:0, transition:{duration:0.8} },
+        hidden: { opacity: 0, scale: 0, x:'-50%' },
+    }
     
     const proj = Info.map( item =>{
         console.log(item.skills)
         return(
             <motion.div 
-               
-                key={item.id} className='col-12 col-md-5 col-lg-3 mx-auto text-center my-5'>
+            variants={boxVariant}
+            initial="hidden"
+            whileInView='visible'
+                key={item.id} className='col-10 col-md-5 col-lg-3 mx-auto text-center my-5'>
                 <a href={item.website} target={"_blank"} rel="noopener noreferrer"  className={props.setTheme.a} 
-                initial="hidden" animate="show"  variants={container}>
-
-                    <motion.Card  className={props.setTheme.card} variants={item}>
+            >
+                    <motion.Card  
+                    whileTap={{ scale: 0.9 }}
+                   className={props.setTheme.card} >
                         <Card.Img src={item.image}/>
                         <Card.Body className='cardbody rounded'>
                             <Card.Title> {item.name}</Card.Title>

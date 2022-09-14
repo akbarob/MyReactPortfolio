@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, Nav, NavItem,Button,Row,Col,Image } from "react-bootstrap";
 import { FilterCircle, FilterLeft, FilterSquare, Lightbulb, LightbulbFill, ListUl} from "react-bootstrap-icons";
 import {NavLink, Link} from "react-router-dom";
-
+import { motion } from "framer-motion";
 import { useState } from "react";
 import SsHeader from "./smallScreenheader";
 export default function Header(props){
@@ -19,11 +19,13 @@ export default function Header(props){
                             <FilterLeft size={30}/>
                         </Button>
                 </div>
-                <NavbarBrand className="mx-auto ps-5 mt-2" >
+                <motion.NavbarBrand
+                 whileTap={{ scale: 0.9, }}
+                 className="mx-auto ps-5 mt-2" >
                     <Link to="/home">
                         <Image src="/images/logo-svg.svg" style={{width: 70}} />
                     </Link>
-                </NavbarBrand>
+                </motion.NavbarBrand>
                 <Nav className=" mx-auto d-none d-md-block col-7">
                     <Row >
                         <Col className="col-auto mx-auto">
@@ -51,9 +53,10 @@ export default function Header(props){
                     </Row>
                 </Nav>
                 <Nav className="  me-3">
-                    <NavItem
+                    <motion.NavItem
                     onClick={props.toggleTheme}
-                    className="theme mt-2 me-auto">
+                    className="theme mt-2 me-auto"
+                    whileTap={{ scale: 0.9, }}>
                             <Row>
                                 <Col className="col-7 mx-auto ">
                                 <h6 className="theme">Theme:</h6>
@@ -67,7 +70,7 @@ export default function Header(props){
                                     </Col>
                             </Row>
                         
-                    </NavItem>
+                    </motion.NavItem>
                     
                     <SsHeader show={showOff} onHide={handleOffcanvasNav} setTheme={props.setTheme} isDark={props.isDark} toggleTheme={props.toggleTheme}/>
 

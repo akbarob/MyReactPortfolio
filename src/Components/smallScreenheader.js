@@ -4,7 +4,7 @@ import { LightbulbFill, XLg } from "react-bootstrap-icons";
 
 export default function SsHeader(props){
     return(
-        <Offcanvas className={props.isDark? 'off-navi':''} show={props.show} onHide={props.onHide}>
+        <Offcanvas className={props.isDark? 'off-navi':''} show={props.show} onHide={props.onHide}  >
             <Offcanvas.Header >
                 <NavbarBrand className="mx-auto ps-5">
                         <Image src="/images/akbarbadmus-logo2.png" style={{width: 80}} />
