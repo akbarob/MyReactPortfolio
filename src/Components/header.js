@@ -6,7 +6,6 @@ import { useState } from "react";
 import SsHeader from "./smallScreenheader";
 export default function Header(props){
     
-
     const [showOff, setShowOff] = useState(false)
     function handleOffcanvasNav(){
         setShowOff(prevState => !prevState)

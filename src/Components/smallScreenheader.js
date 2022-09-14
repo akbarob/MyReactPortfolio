@@ -3,8 +3,9 @@ import {NavLink, Link} from "react-router-dom";
 import { LightbulbFill, XLg } from "react-bootstrap-icons";
 
 export default function SsHeader(props){
+    
     return(
-        <Offcanvas className={props.isDark? 'off-navi':''} show={props.show} onHide={props.onHide}  >
+        <Offcanvas className={props.isDark? 'off-navi':''} show={props.show} onHide={props.onHide} >
             <Offcanvas.Header >
                 <NavbarBrand className="mx-auto ps-5">
                         <Image src="/images/akbarbadmus-logo2.png" style={{width: 80}} />
@@ -44,7 +45,8 @@ export default function SsHeader(props){
             <Nav className="mx-auto mt-auto">
                     <NavItem
                     onClick={props.toggleTheme}
-                    className="theme mt-1 text-center">
+                    className="theme mt-1 text-center"
+                    >
                             <Row>
                                 <Col className="col-7 mx-auto ">
                                 <h6 className={props.setTheme.color}>Theme:</h6>
@@ -52,7 +54,6 @@ export default function SsHeader(props){
                                 <Col className="c">
                                     <LightbulbFill
                                         color={props.isDark? "brown" : "yellow" }
-                                        
                                         className='pb-1'
                                         size={15}/>
                                     </Col>
