@@ -1,4 +1,4 @@
-import { Navbar, NavbarBrand, Nav, NavItem,Button,Row,Col,Image } from "react-bootstrap";
+import { Navbar, NavbarBrand, Nav, NavItem,Button,Row,Col,Image, Container } from "react-bootstrap";
 import { FilterCircle, FilterLeft, FilterSquare, Lightbulb, LightbulbFill, ListUl} from "react-bootstrap-icons";
 import {NavLink, Link} from "react-router-dom";
 import { motion } from "framer-motion";
@@ -12,6 +12,7 @@ export default function Header(props){
     }
     return(
             <Navbar bg={props.isDark? 'dark':'light'} className={props.setTheme.navshade} >
+                <Container>
                 
                 <div className="px-2">
                     <Button variant = {props.isDark? 'danger': 'warning'} onClick={handleOffcanvasNav} className='d-md-none shadow-none'>
@@ -51,9 +52,9 @@ export default function Header(props){
                         </Col>
                     </Row>
                 </Nav>
-                <Nav className="  me-3">
+                <Nav className=" " onClick={props.toggleTheme}>
                     <motion.NavItem
-                    onClick={props.toggleTheme}
+                    
                     className="theme mt-2 me-auto"
                     whileTap={{ scale: 0.9, }}>
                             <Row>
@@ -76,7 +77,7 @@ export default function Header(props){
                 </Nav>
 
                 
-                
+                </Container>
             </Navbar>
 
         

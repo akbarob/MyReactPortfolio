@@ -30,7 +30,7 @@ export default function Projects(props){
             variants={boxVariant}
             initial="hidden"
             whileInView='visible'
-                key={item.id} className='col-10 col-md-5 col-lg-3 mx-auto text-center my-5'>
+                key={item.id} className='col-10 col-md-5 col-lg-5 mx-auto text-center my-5 pt-5'>
                 <a href={item.website} target={"_blank"} rel="noopener noreferrer"  className={props.setTheme.a} 
             >
                     <motion.Card  
@@ -45,13 +45,13 @@ export default function Projects(props){
                             <Badge pill bg='danger' className='mx-1'>{item.skills.rest}</Badge>
                             <Badge pill bg='danger' className='mx-1'>{item.skills.firebase}</Badge>  
                             <Badge pill bg='danger' className='mx-1'>{item.skills.css}</Badge>  
- 
+                            <Badge pill bg='danger' className='mx-1'>{item.skills.heroku}</Badge>  
                         </Card.Body>
 
                     </motion.Card>
                 </a>
 
-                <div className='my-2 mydiv'>
+                <div className='my-3 mydiv'>
                         <a href={item.source} target={"_blank"} rel="noopener noreferrer" className={props.setTheme.projectLink} >
                             <h3>&lt;Source Code/&gt;</h3>
                         </a> 

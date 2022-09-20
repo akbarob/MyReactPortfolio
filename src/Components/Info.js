@@ -25,7 +25,8 @@ export const Info =[
             redux:'Redux',
             bs:'Bootstrap',
             rest:'REST Api',
-            css:'CSS'
+            css:'CSS',
+            heroku:'Heroku'
         },
         source: "https://github.com/akbarob/wears-app"
     },
@@ -41,6 +42,23 @@ export const Info =[
         
         },
         source: "https://github.com/akbarob/MyReactPortfolio"
+
+    },
+    {
+        id:3,
+        name:'Wears Remake w/ Firebase',
+        image: "images/wears remake.png",
+        website:"https://wears.vercel.app/",
+        skills:{
+            react:'React',
+            redux:'Redux',
+            bs:'Bootstrap',
+            rest:'REST Api',
+            css:'CSS',
+            firebase:'firebase'
+        
+        },
+        source: "https://github.com/akbarob/wears"
 
     },
 ]
