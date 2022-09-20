@@ -61,6 +61,20 @@ export const Info =[
         source: "https://github.com/akbarob/wears"
 
     },
+    {
+        id:3,
+        name:'Reacter Landing Page',
+        image: "images/reacter.png",
+        website:"https://reacter-akbarob.vercel.app//",
+        skills:{
+            react:'React',
+            bs:'Bootstrap',
+            css:'CSS',
+        
+        },
+        source: "https://github.com/akbarob/reacter"
+
+    },
 ]
 export const ProfileLinks=[
        {

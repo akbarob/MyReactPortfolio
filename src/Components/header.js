@@ -19,13 +19,17 @@ export default function Header(props){
                             <FilterLeft size={30}/>
                         </Button>
                 </div>
-                <motion.NavbarBrand
-                 whileTap={{ scale: 0.9, }}
+                
+                <motion.div whileTap={{ scale: 0.9, }}>
+                <NavbarBrand
                  className="mx-auto ps-5 mt-2" >
                     <Link to="/home">
                         <Image src="/images/logo-svg.svg" style={{width: 70}} />
                     </Link>
-                </motion.NavbarBrand>
+                </NavbarBrand>
+
+                </motion.div>
+                
                 <Nav className=" mx-auto d-none d-md-block col-7">
                     <Row >
                         <Col className="col-auto mx-auto">
@@ -52,25 +56,26 @@ export default function Header(props){
                         </Col>
                     </Row>
                 </Nav>
-                <Nav className=" " onClick={props.toggleTheme}>
-                    <motion.NavItem
-                    
-                    className="theme mt-2 me-auto"
-                    whileTap={{ scale: 0.9, }}>
-                            <Row>
-                                <Col className="col-7 mx-auto ">
-                                <h6 className="theme">Theme:</h6>
+                <Nav className=" " >
+                    <motion.div
+                        whileTap={{ scale: 0.9, }} onClick={props.toggleTheme}>
+                    <NavItem className="theme mt-2 me-auto">
+                        <Row>
+                            <Col className="col-7 mx-auto ">
+                            <h6 className="theme">Theme:</h6>
+                            </Col>
+                            <Col className="">
+                                <LightbulbFill
+                                    color={props.isDark? "brown" : "yellow" }                                        
+                                    className='pb-1'
+                                    size={15}/>
                                 </Col>
-                                <Col className="">
-                                    <LightbulbFill
-                                        color={props.isDark? "brown" : "yellow" }
-                                        
-                                        className='pb-1'
-                                        size={15}/>
-                                    </Col>
-                            </Row>
+                        </Row>
                         
-                    </motion.NavItem>
+                    </NavItem>
+
+                    </motion.div>
+                    
                     
                     <SsHeader show={showOff} onHide={handleOffcanvasNav} setTheme={props.setTheme} isDark={props.isDark} toggleTheme={props.toggleTheme}/>
 
