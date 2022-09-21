@@ -50,6 +50,7 @@ export default function AboutMe(){
                     <ul className="list-unstyled offset-2">
                         <li>Mongodb</li>
                         <li>Express</li>
+                        <li>Passport jwt</li>
                        
                     </ul>
                     </Col>  
