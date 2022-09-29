@@ -33,7 +33,7 @@ export default function AboutMe(){
             whileInView='visible'
             className="col-10 col-md-8 mx-auto about-bg"> 
                 <h5 className="text-center ">About Me</h5>
-                <p className="text-justify">Hello! I'm Akbar, a front-end developer from Nigeria. I love building web applications with React, and I'm currently studying server side. I am on a journey to make the world a better place while constantly learning daily .
+                <p className="text-justify">Hello! I'm Akbar, a front-end developer from Nigeria. I love building web applications with React, and I'm currently upscaling for a great Career. I am on a journey to make the world a better place while constantly learning daily .
 
                     I still don't know if it's "front-end", "frontend, or "front end", and at this point I'm too afraid to ask.</p>
             </motion.div>
