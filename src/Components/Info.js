@@ -85,3 +85,75 @@ export const ProfileLinks=[
         }
     
 ]
+
+export const Skills =[
+    {
+        id:0,
+        skill:'HTML',
+        img:"https://cdn.worldvectorlogo.com/logos/html-1.svg"
+    },
+    {
+        id:1,
+        skill:'CSS',
+        img:'https://cdn.worldvectorlogo.com/logos/css-3.svg'
+    },
+    {
+        id:2,
+        skill:'Javascript',
+        img:'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg'
+    },
+    {
+        id:3,
+        skill:'Typescript',
+        img:'https://cdn.worldvectorlogo.com/logos/typescript.svg'
+    },
+    {
+        id:4,
+        skill:'React',
+        img:'https://cdn.worldvectorlogo.com/logos/react-2.svg'
+    },
+    {
+        id:5,
+        skill:'Bootstrap',
+        img:'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg'
+    },
+    {
+        id:6,
+        skill:'Node JS',
+        img:'https://cdn.worldvectorlogo.com/logos/nodejs.svg'
+    },
+    {
+        id:7,
+        skill:'Github',
+        img:'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg'
+    },
+    {
+        id:8,
+        skill:'Redux',
+        img:'https://cdn.worldvectorlogo.com/logos/redux.svg'
+    },
+    {
+        id:9,
+        skill:'Firebase',
+        img:'https://cdn.worldvectorlogo.com/logos/firebase-2.svg'
+    },
+    {
+        id:10,
+        skill:'MongoDB',
+        img:'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg'
+    },
+    {
+        id:11,
+        skill:'Express JS',
+        img:'https://cdn.worldvectorlogo.com/logos/express-109.svg'
+    },
+    {
+        id:12,
+        skill:'Passport',
+        img:'https://cdn.worldvectorlogo.com/logos/passport.svg'
+    },
+    {
+        id:13,
+        github:'git',
+    },
+]
