@@ -46,6 +46,8 @@ export default function Projects(props){
                             <Badge pill bg='danger' className='mx-1'>{item.skills.firebase}</Badge>  
                             <Badge pill bg='danger' className='mx-1'>{item.skills.css}</Badge>  
                             <Badge pill bg='danger' className='mx-1'>{item.skills.heroku}</Badge>  
+                            <Badge pill bg='danger' className='mx-1'>{item.skills.typeScript}</Badge>  
+
                         </Card.Body>
 
                     </motion.Card>

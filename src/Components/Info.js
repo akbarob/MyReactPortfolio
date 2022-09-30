@@ -75,6 +75,20 @@ export const Info =[
         source: "https://github.com/akbarob/reacter"
 
     },
+    {
+        id:4,
+        name:'Notify',
+        image: "images/notify.png",
+        website:"https://notify-steel.vercel.app/",
+        skills:{
+            typeScript: 'Typescript',
+            react:'React',
+            css:'CSS',
+        
+        },
+        source: "https://github.com/akbarob/Notify"
+
+    },
 ]
 export const ProfileLinks=[
        {
