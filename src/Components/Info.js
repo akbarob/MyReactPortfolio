@@ -89,6 +89,20 @@ export const Info =[
         source: "https://github.com/akbarob/Notify"
 
     },
+    {
+        id:5,
+        name:'Cloud-app',
+        image: "images/cloud.png",
+        website:"https://cloud-app-chi.vercel.app/",
+        skills:{
+            typeScript: 'Typescript',
+            react:'React',
+            css:'Tailwind',
+        
+        },
+        source: "https://github.com/akbarob/cloud-app"
+
+    },
 ]
 export const ProfileLinks=[
        {
@@ -128,46 +142,48 @@ export const Skills =[
     },
     {
         id:5,
+        skill:'Tailwindcss',
+        img:'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg'
+    },
+    {
+        id:6,
         skill:'Bootstrap',
         img:'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg'
     },
     {
-        id:6,
+        id:7,
         skill:'Node JS',
         img:'https://cdn.worldvectorlogo.com/logos/nodejs.svg'
     },
     {
-        id:7,
+        id:8,
         skill:'Github',
         img:'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg'
     },
     {
-        id:8,
+        id:9,
         skill:'Redux',
         img:'https://cdn.worldvectorlogo.com/logos/redux.svg'
     },
     {
-        id:9,
+        id:10,
         skill:'Firebase',
         img:'https://cdn.worldvectorlogo.com/logos/firebase-2.svg'
     },
     {
-        id:10,
+        id:11,
         skill:'MongoDB',
         img:'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg'
     },
     {
-        id:11,
+        id:12,
         skill:'Express JS',
         img:'https://cdn.worldvectorlogo.com/logos/express-109.svg'
     },
     {
-        id:12,
+        id:13,
         skill:'Passport',
         img:'https://cdn.worldvectorlogo.com/logos/passport.svg'
     },
-    {
-        id:13,
-        github:'git',
-    },
+    
 ]
